@@ -61,9 +61,9 @@ def check_output_path(output_path):
     print(f"after: {output_path}")
     return output_path
 
-def generate_chapter(title, chapter_number, chapter_text, output_path="generations"):
+def generate_chapter(title, chapter_number, chapter_text, output_path="generations", SPEAKER="v2/en_speaker_6"):
     title_str = strip_script(title)
-    title_pieces = generate_audio_from_script(title_str)
+    title_pieces = generate_audio_from_script(title_str, SPEAKER)
     script = strip_script(chapter_text)
-    script_pieces = generate_audio_from_script(script)
+    script_pieces = generate_audio_from_script(script, SPEAKER)
     write_wav(f"{output_path}/audio/{chapter_number}_{title}.wav", SAMPLE_RATE, np.concatenate(title_pieces + script_pieces))
