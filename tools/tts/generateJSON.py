@@ -9,12 +9,10 @@ from scipy.io.wavfile import write as write_wav
 with open(sys.argv[1]) as f:
     data = json.load(f)
 
-speaker = sys.argv[2] if len(sys.argv) == 3 else "v2/en_speaker_6"
+speaker = sys.argv[2] if sys.argv[2] != '' else "v2/en_speaker_6"
 
-print(data)
 
 title = list(data.keys())[0]
-print(title)
 chapters = data[title]
 
 output_path = check_output_path(f"generations/{title}")

@@ -11,7 +11,7 @@ if len(sys.argv) < 3:
     print('Usage: python jpgaudio2mp4.py <audio.mp3> <image.jpg> <output.mp4>')
     sys.exit(1)
 
-def create_video(audio_path, image_path, output_path, fps=24):
+def create_video(audio_path, image_path, output_path):
   command = [
       "ffmpeg",
       "-loop", "1",

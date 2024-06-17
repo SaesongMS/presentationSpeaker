@@ -5,7 +5,7 @@ from bark import SAMPLE_RATE
 # Usage: python generateScript.py <Script> <Output Name> <Output Path> <speaker>
 # Example: python generateScript.py "Sun Tzu said: The art of war is of vital importance to the State." "quote" "generations/TheArtOfWar/Chapter1" "v2/en_speaker_6"
 
-if len(sys.argv) != 4:
+if len(sys.argv) < 4:
     print("Usage: python generateScript.py <Script> <Output Name> <Output Path>")
     sys.exit(1)
 
