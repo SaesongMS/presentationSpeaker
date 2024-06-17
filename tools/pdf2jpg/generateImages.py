@@ -20,6 +20,12 @@ images = convert_from_path(pdf_file, poppler_path=poppler_path)
 import os
 if not os.path.exists(f"{output_folder}/imgs"):
     os.mkdir(f"{output_folder}/imgs")
+elif os.path.exists(output_folder):
+    i = 1
+    while os.path.exists(output_folder + str(i)):
+        i += 1
+    output_folder = output_folder + str(i-1)
+    os.makedirs(f"{output_folder}/imgs")
 
 for i, image in enumerate(images):
     image.save(f"{output_folder}/imgs/{i}.jpg", "JPEG")
