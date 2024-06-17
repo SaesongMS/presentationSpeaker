@@ -63,6 +63,22 @@ def merge_videos(input_file, output_path):
     # Delete the temporary file
     os.remove('temp.txt')
 
+def check_output_path(output_path):
+    print(f"before: {output_path}")
+    #check if folder exists with the title and if yes add a number to the title
+    if os.path.exists(output_path):
+        i = 1
+        while os.path.exists(output_path + str(i)):
+            i += 1
+        output_path = output_path + str(i-1)
+        if output_path.endswith("0"):
+            output_path = output_path[:-1]
+    print(f"after: {output_path}")
+    return output_path
+
+generations_path = check_output_path(generations_path)
+print(f"Output path checked: {generations_path}")
+
 videos = []
 #merge title with first slide
 create_video(f"{generations_path}/audio/title.wav", f"{generations_path}/imgs/0.jpg", f"{generations_path}/0.mp4")

@@ -25,6 +25,8 @@ elif os.path.exists(output_folder):
     while os.path.exists(output_folder + str(i)):
         i += 1
     output_folder = output_folder + str(i-1)
+    if output_folder.endswith("0"):
+            output_folder = output_folder[:-1]
     os.makedirs(f"{output_folder}/imgs")
 
 for i, image in enumerate(images):
