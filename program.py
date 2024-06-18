@@ -163,6 +163,8 @@ class App(customtkinter.CTk):
         file_path = filedialog.askopenfilename(title="Select file", initialdir="/", filetypes=(("Pliki JSON", [".json"]),("Wszystkie pliki", "*.*")))
         if(file_path!=""):
             filename = os.path.basename(file_path)
+            if not os.path.exists("generations"):
+                os.mkdir("generations")
             run_simplifyJSON_command(file_path,f"generations/simplified_{filename}")
             self.new_path=f"generations/simplified_{filename}"
             self.select_file_json()
