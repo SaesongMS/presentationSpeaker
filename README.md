@@ -13,9 +13,9 @@ CUDA is NVIDIA's computing platform that enables accelerated computing using a G
 ### PyTorch
 PyTorch is a flexible and powerful library used to build and train machine learning models. It is used to implement and run `text-to-speech` models. 
 
-To install, issue the command:
+To install, download the chosen version from the Pytorch website.
 ```
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+https://pytorch.org/get-started/locally/
 ```
 ### [Bark](https://github.com/suno-ai/bark)
 Bark is a library that supports natural language processing (NLP) and voice generation. It is used for converting text into speech. It provides tools for the efficient extraction and conversion of text into sound sequences which is crucial in text-to-speech processing. 
