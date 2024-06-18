@@ -139,7 +139,7 @@ You can call the scripts yourself in the console to get the output in the consol
 }
 ```
 ### Example of generated audio in Polish
-<audio controls src="test_pl.wav" title="Title"></audio>
+https://github.com/SaesongMS/tts-laby/assets/76967271/91e3c169-3c67-4570-8bb9-7937e5e6f5b8
 
 ### Example of generated audio in English
-<audio controls src="test_ang.wav" title="Title"></audio>
+https://github.com/SaesongMS/tts-laby/assets/76967271/6a95e815-38ca-4317-9203-398dd6aa12d2
