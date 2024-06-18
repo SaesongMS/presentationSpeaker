@@ -21,13 +21,17 @@ import os
 if not os.path.exists(f"{output_folder}/imgs"):
     os.mkdir(f"{output_folder}/imgs")
 elif os.path.exists(output_folder):
-    i = 1
-    while os.path.exists(output_folder + str(i)):
-        i += 1
-    output_folder = output_folder + str(i-1)
-    if output_folder.endswith("0"):
-            output_folder = output_folder[:-1]
-    os.makedirs(f"{output_folder}/imgs")
+    if not os.path.exists(f"{output_folder}/imgs"): # Added condition
+        i = 1
+        while os.path.exists(output_folder + str(i)):
+            i += 1
+        output_folder = output_folder + str(i-1)
+        if output_folder.endswith("0"):
+                output_folder = output_folder[:-1]
+        os.makedirs(f"{output_folder}/imgs")
+    else:
+         print("Folder already exists")
+
 
 for i, image in enumerate(images):
     image.save(f"{output_folder}/imgs/{i}.jpg", "JPEG")
