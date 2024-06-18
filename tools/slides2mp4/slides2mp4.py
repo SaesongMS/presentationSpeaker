@@ -46,7 +46,7 @@ def create_video(audio_path, image_path, output_path):
 
 
 def merge_videos(input_file, output_path):
-    with open('temp.txt', 'w') as f:
+    with open('temp.txt', 'w', encoding='UTF-8') as f:
         for path in input_file:
             f.write(f"file '{path}'\n")
 
