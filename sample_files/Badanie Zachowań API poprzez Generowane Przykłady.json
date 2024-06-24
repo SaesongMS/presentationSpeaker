@@ -1,0 +1,86 @@
+
+{
+    "title": "Badanie Zachowań API poprzez Generowane Przykłady",
+    "bibliography": [],
+    "authors": [
+      {
+        "name": "Stefan Karlsson",
+        "email": "stefan.l.karlsson@se.abb.com",
+        "university_id": "1"
+      },
+      {
+        "name": "John Hughes",
+        "email": "rjmh@chalmers.se",
+        "university_id": "3"
+      },
+      {
+        "name": "Robbert Jongeling",
+        "email": "robbert.jongeling@mdu.se",
+        "university_id": "2"
+      },
+      {
+        "name": "Adnan Čaušević",
+        "email": "adnan.causevic@se.abb.com",
+        "university_id": "1"
+      },
+      {
+        "name": "Daniel Sundmark",
+        "email": "daniel.sundmark@mdu.se",
+        "university_id": "2"
+      }
+    ],
+    "universities": [
+      {
+        "name": "ABB AB",
+        "id": "1"
+      },
+      {
+        "name": "Mälardalen University",
+        "id": "2"
+      },
+      {
+        "name": "Chalmers University of Technology",
+        "id": "3"
+      },
+      {
+        "name": "Quviq AB",
+        "id": "4"
+      }
+    ],
+    "contents": [
+      {
+        "title": "Abstrakt",
+        "text": "Zrozumienie zachowania systemu API może być trudne. Dostęp do *relewantnych* przykładów jego zachowania może to ułatwić."
+      },
+      {
+        "title": "Wprowadzenie",
+        "bullet_points": [
+          "Zrozumienie i weryfikacja zachowania API jest trudnym zadaniem.",
+          "Dostęp do przykładów działania API może znacznie ułatwić jego zrozumienie.",
+          "Generowane przykłady mogą pokazać zarówno oczekiwane, jak i nieoczekiwane zachowania."
+        ]
+      },
+      {
+        "title": "Zastosowanie przykładów generowanych",
+        "bullet_points": [
+          "Pomoc w zrozumieniu funkcjonalności API dla użytkowników końcowych.",
+          "Wsparcie dla deweloperów integrujących się z zewnętrznymi systemami.",
+          "Dokumentacja w architekturze mikrousług."
+        ]
+      },
+      {
+        "title": "Wymagania dla generowania przykładów",
+        "bullet_points": [
+          "Przykłady powinny ilustrować interesujące i zróżnicowane zachowania.",
+          "Ilość przykładów powinna być mała.",
+          "Każdy przykład powinien być minimalny i relewantny."
+        ]
+      },
+      {
+        "title": "Diagram pomagający zrozumieć API",
+        "image": "1_image_0.png",
+        "caption": "Diagram interakcji z API generowanymi przykładami."
+      }
+    ]
+  }
+  

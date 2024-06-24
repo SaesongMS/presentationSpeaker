@@ -1,0 +1,6 @@
+{"Exploring Api Behaviours Through Generated Examples": 
+{
+    "1 **Introduction**": "Understanding and verifying the behaviour of an API can be a difficult task. One way of alleviating some of this burden is through access to examples of the API's behaviour (McLellan et al., 1998; Novick & Ward, 2006; Nykaza et al., 2002; Robillard, 2009; Robillard & DeLine, 2011; Shull et al., 2000).",
+    "2 Problem": "However, generating examples of an API's behaviour can be a difficult task. This is because the behaviour of an API is often complex and can be difficult to understand. Furthermore, generating examples of an API's behaviour can be time-consuming and error-prone."
+}
+}
