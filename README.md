@@ -1,7 +1,7 @@
 # tts-laby
 
 ## Project description
-The project "Automatic generation of a speaker's voice in Polish from a PDF or Markdown file" was aimed at creating a "text-to-speech" (TTS) system to convert text into a speaker's voice. It will use text-to-speech processing to generate recordings in both Polish and English from PDF or Markdown files.
+The project "PresentationSpeaker" was aimed at creating a "text-to-speech" (TTS) system to convert text into a speaker's voice. It will use text-to-speech processing to generate recordings in both Polish and English from JSON and PDF files.
 
 ## 1. Installation
 ### [Venv](https://code.visualstudio.com/docs/python/python-tutorial)
